@@ -86,7 +86,7 @@ class XSDValidation extends Constraint
      * @param  \DomDocument|\SimpleXMLElement|string $other  (not used)
      * @return string
      */
-    protected function additionalFailureDescription($other)
+    protected function additionalFailureDescription($other) : string
     {
         $desc = '';
 
@@ -109,7 +109,7 @@ class XSDValidation extends Constraint
      * @param  mixed  $other Evaluated value or object.
      * @return string
      */
-    protected function failureDescription($other)
+    protected function failureDescription($other) : string
     {
         if ($other instanceof \SimpleXMLElement) {
             $xml = $other->asXML();
