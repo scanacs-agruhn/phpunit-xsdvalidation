@@ -13,8 +13,8 @@
             "email": "andr.wuttig@gmail.com"
         }
     ],
-    "suggest": {
-        "phpunit/phpunit": "~6.4"
+    "requires": {
+        "phpunit/phpunit": "~9.4.0"
     },
     "autoload": {
         "psr-0": {

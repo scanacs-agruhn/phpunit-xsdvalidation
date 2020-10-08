@@ -58,7 +58,7 @@ class XSDValidation extends Constraint
      * @param  \DomDocument|\SimpleXMLElement|string $other  XML to validate.
      * @return boolean
      */
-    protected function matches($other)
+    protected function matches($other) : bool
     {
         libxml_use_internal_errors(true);
 
