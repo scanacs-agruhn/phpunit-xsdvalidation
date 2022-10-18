@@ -127,7 +127,7 @@ class XSDValidation extends Constraint
      *
      * @return string
      */
-    public function toString()
+    public function toString(): string
     {
         return "validates against XSD schema" . ($this->schemaIsXml() ? '' : " '" . basename($this->schema) . "'");
     }
